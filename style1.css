@@ -40,7 +40,7 @@ nav ul{
    background-color: antiquewhite;
    text-decoration: none;
    align-items: right;
-   margin-right: 100;
+   /* margin-right: 100; */
  }
 a{
    margin-right: 10px;
