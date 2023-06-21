@@ -132,7 +132,7 @@ h1{
    #check:checked~ul li{
       margin-top: 0px;
       display: block;
-      text-align: center;
+      text-align: left;
    
    }
 
