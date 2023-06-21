@@ -40,7 +40,7 @@ nav ul{
    background-color: antiquewhite;
    text-decoration: none;
    align-items: right;
-   margin-right: -500;
+   margin-right: 100;
  }
 a{
    margin-right: 10px;
@@ -69,7 +69,6 @@ h{
 }
 h1{
    font-style: bold;
-   font-size: 20px;
 }
 ul{
   
@@ -105,6 +104,9 @@ nav ul li a:hover::after{
 h1{
    font-size: 80px;
 }
+#check{
+   display:none;
+}
 
 
 
@@ -113,20 +115,26 @@ h1{
 
 
 
-@media  (max-width: 800px) {
+@media  (max-width: 781px) {
    /* CSS code for responsiveness at 810px or lower */
    /* For example, you can modify the layout, font size, or spacing */
  
    /* Example: Adjust the navigation menu for smaller screens */
   nav ul li {
-       margin-right: 100%;
-      display: none;
+      margin-top: 10px;
+      display:none;
+      /* margin-right: 80%; */
+      width:100vh;
+      text-align: center;
      flex-direction:column;
+   
    }
-   .hamburger {
-      display: inline-block;
-      cursor: pointer;
-    }
+   #check:checked~ul li{
+      margin-top: 0px;
+      display: block;
+      text-align: center;
+   
+   }
 
     nav ul.show {
       display: block;
@@ -148,10 +156,6 @@ h1{
    h1{
       font-size: 1%;
    }
-   .humburger a {
-      display: block;
-   }
-
    
  }
 
@@ -177,9 +181,73 @@ h1{
    .header-text{
       font-size: 90px;
    }
-   .humburger a {
+   #checkbtn{
+      float:right;
       display: none;
    }
+   #check{
+      display: none;
+   } 
 
 }
+
+h1{
+   font-size: 50px;
+}
+
+.skills-section {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+ .skill {
+   width: 200px;
+   margin: 10px;
+   text-align: center;
+ }
+ 
+ .skill h3 {
+   margin-top: 0;
+ }
+ 
+ .skill-bar {
+   width: 100%;
+   height: 10px;
+   background-color: #f2f2f2;
+   border-radius: 5px;
+   overflow: hidden;
+ }
+ 
+ .skill-progress {
+   height: 100%;
+   background-color: #4caf50;
+   width: 0;
+   animation: skillProgress 2s ease-in-out;
+ }
+ 
+ .skill-percent {
+   display: block;
+   margin-top: 5px;
+ }
+ 
+ .advance-progress {
+   width: 90%;
+ }
+ 
+ .beginner-progress {
+   width: 30%;
+ }
+ 
+ .intermediate-progress {
+   width: 50%;
+ }
+ 
+ @keyframes skillProgress {
+   0% {
+     width: 0;
+   }
+   100% {
+     width: var(--progress-width);
+   }
+ }
  
