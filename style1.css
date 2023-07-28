@@ -156,11 +156,10 @@ h1{
    h1{
       font-size: 1%;
    }
-   #check{
-      float: right;
-     margin-left: 300spx; 
-
-    }   
+   .skill img {
+      width: 64px; /* Adjust the size as needed */
+      height: 64px;
+    }
 
    }
    
@@ -257,4 +256,31 @@ h1{
      width: var(--progress-width);
    }
  }
+
+
+
+ /* for skill section  */
+ #skills {
+   margin-left: 100px;
+
+ }
+ 
+ .skill {
+   /* background-color: aqua; */
+   display: inline-block;
+   text-align: center;
+   margin: 10px;
+ }
+ 
+ .skill img {
+   width: 100px; /* Adjust the size as needed */
+   height: 80px;
+ }
+ 
+ .skill span {
+   display: block;
+   margin-top: 5px;
+   font-size: 14px;
+ }
+ 
  
