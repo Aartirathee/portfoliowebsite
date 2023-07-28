@@ -156,7 +156,11 @@ h1{
    h1{
       font-size: 1%;
    }
-      
+   #check{
+      float: right;
+     margin-left: 300spx; 
+
+    }   
 
    }
    
